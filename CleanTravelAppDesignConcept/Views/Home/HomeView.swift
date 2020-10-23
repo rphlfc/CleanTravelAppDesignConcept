@@ -10,11 +10,12 @@ import SwiftUI
 
 struct HomeView: View {
     @Binding var showDetails: Bool
-    @Binding var item: GridItem?
+    @Binding var selectedItem: Place?
+    var animation: Namespace.ID
     
     var body: some View {
         ZStack {
-            HomeContentView(showDetails: self.$showDetails, item: self.$item)
+            HomeContentView(showDetails: $showDetails, selectedItem: $selectedItem, animation: animation)
             
             VStack {
                 Spacer()
@@ -31,8 +32,8 @@ struct HomeView: View {
     }
 }
 
-struct HomeView_Previews: PreviewProvider {
-    static var previews: some View {
-        HomeView(showDetails: .constant(false), item: .constant(nil))
-    }
-}
+//struct HomeView_Previes: PreviewProvider {
+//    static var previews: some View {
+//        HomeView(showDetails: .constant(false), selectedItem: .constant(places[0]))
+//    }
+//}

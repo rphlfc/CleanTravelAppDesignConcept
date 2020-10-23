@@ -10,22 +10,30 @@ import SwiftUI
 
 struct DetailsView: View {
     @Binding var showDetails: Bool
-    @Binding var item: GridItem?
+    @Binding var item: Place!
+    var animation: Namespace.ID
     
     var body: some View {
         ZStack(alignment: .bottom) {
-            Image(item?.imageName ?? "")
+            Image(item.image)
                 .resizable()
-                .scaledToFill()
+                .aspectRatio(contentMode: .fill)
                 .frame(width: UIScreen.main.bounds.width)
-                .edgesIgnoringSafeArea(.all)
+                .ignoresSafeArea(.all, edges: .all)
+                .matchedGeometryEffect(id: item.image, in: animation)
             
             VStack {
                 HStack {
                     Button(action: {
-                        self.showDetails.toggle()
+                        withAnimation(.easeOut) {
+                            self.showDetails.toggle()
+                        }
                     }) {
                         Image(systemName: "chevron.left")
+                            .foregroundColor(.black)
+                            .frame(width: 40, height: 40)
+                            .background(Color.white)
+                            .clipShape(Circle())
                     }
                     
                     Spacer()
@@ -34,15 +42,18 @@ struct DetailsView: View {
                         
                     }) {
                         Image(systemName: "magnifyingglass")
+                            .foregroundColor(.black)
+                            .frame(width: 40, height: 40)
+                            .background(Color.white)
+                            .clipShape(Circle())
                     }
                 }
-                .foregroundColor(.white)
                 .padding()
                 
                 Spacer()
                 
                 VStack(alignment: .leading) {
-                    Text(item?.title ?? "")
+                    Text(item.title)
                         .font(.system(size: 36, weight: .medium, design: .rounded))
                         .foregroundColor(Color(#colorLiteral(red: 0.1718640327, green: 0.2565479279, blue: 0.2901001573, alpha: 1)))
                         .padding(.top, 8)

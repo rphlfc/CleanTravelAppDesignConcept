@@ -7,12 +7,13 @@ Encontrei esse [layout](https://www.instagram.com/p/CD5iThqAkWO/) do [Abdullah S
 </p>
  
 ## Vídeo
-[Vídeo no YouTube](https://youtu.be/WNMKI_uQKbs)
+- [Vídeo no YouTube](https://youtu.be/WNMKI_uQKbs)
+- [Vídeo no Youtube](https://youtu.be/z89lddEO9O4) - Atualização com matchedGeometryEffect
 
 ## Requisitos
-- iOS 13
+- iOS 14
 - SwiftUI
-- Xcode 11
+- Xcode 12
 
 ## Meta
 - Youtube: [https://www.youtube.com/channel/UC7UXnCqiqsV4R9lCwKh-rwg](https://www.youtube.com/channel/UC7UXnCqiqsV4R9lCwKh-rwg)
@@ -20,5 +21,3 @@ Encontrei esse [layout](https://www.instagram.com/p/CD5iThqAkWO/) do [Abdullah S
 - LinkedIn: [http://www.linkedin.com/in/rphlfc](http://www.linkedin.com/in/rphlfc)
 - Github: [https://github.com/rphlfc](https://github.com/rphlfc)
 - Website: [https://rphlfc.github.io](https://rphlfc.github.io)
-
-

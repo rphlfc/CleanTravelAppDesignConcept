@@ -10,14 +10,15 @@ import SwiftUI
 
 struct ContentView: View {
     @State var showDetails = false
-    @State var item: GridItem? = nil
+    @State var selectedItem: Place!
+    @Namespace var animation
     
     var body: some View {
-        VStack {
-            if showDetails {
-                DetailsView(showDetails: self.$showDetails, item: self.$item)
-            } else {
-                HomeView(showDetails: self.$showDetails, item: self.$item)
+        ZStack {
+            HomeView(showDetails: self.$showDetails, selectedItem: self.$selectedItem, animation: animation)
+            
+            if selectedItem != nil && showDetails {
+                DetailsView(showDetails: self.$showDetails, item: self.$selectedItem, animation: animation)
             }
         }
     }

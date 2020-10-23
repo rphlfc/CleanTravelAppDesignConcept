@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		643A6B4D253F9C7E00BCC396 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643A6B4C253F9C7E00BCC396 /* Place.swift */; };
 		649E8E3F24F813550016C075 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 649E8E3E24F813550016C075 /* README.md */; };
 		64A0531724F725600069FBFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A0531624F725600069FBFD /* AppDelegate.swift */; };
 		64A0531924F725600069FBFD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A0531824F725600069FBFD /* SceneDelegate.swift */; };
@@ -17,7 +18,6 @@
 		64A0532C24F72C950069FBFD /* Guide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A0532B24F72C950069FBFD /* Guide.swift */; };
 		64A0532F24F731AD0069FBFD /* GuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A0532E24F731AD0069FBFD /* GuideView.swift */; };
 		64A0533124F732640069FBFD /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A0533024F732640069FBFD /* TabBarItem.swift */; };
-		64A0533524F73AB30069FBFD /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A0533424F73AB30069FBFD /* Cell.swift */; };
 		64A0533924F742170069FBFD /* HomeContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A0533824F742170069FBFD /* HomeContentView.swift */; };
 		64A6F69A24F8025A0051A1A5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A6F69924F8025A0051A1A5 /* HomeView.swift */; };
 		64A6F69E24F8039F0051A1A5 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A6F69C24F8039E0051A1A5 /* TabBarView.swift */; };
@@ -26,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		643A6B4C253F9C7E00BCC396 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		649E8E3E24F813550016C075 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		64A0531324F725600069FBFD /* CleanTravelAppDesignConcept.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanTravelAppDesignConcept.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64A0531624F725600069FBFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -38,7 +39,6 @@
 		64A0532B24F72C950069FBFD /* Guide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guide.swift; sourceTree = "<group>"; };
 		64A0532E24F731AD0069FBFD /* GuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideView.swift; sourceTree = "<group>"; };
 		64A0533024F732640069FBFD /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
-		64A0533424F73AB30069FBFD /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 		64A0533824F742170069FBFD /* HomeContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeContentView.swift; sourceTree = "<group>"; };
 		64A6F69924F8025A0051A1A5 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		64A6F69C24F8039E0051A1A5 /* TabBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
@@ -77,11 +77,11 @@
 		64A0531524F725600069FBFD /* CleanTravelAppDesignConcept */ = {
 			isa = PBXGroup;
 			children = (
+				64A0532A24F725C60069FBFD /* Views */,
+				64A0532D24F72CA00069FBFD /* Models */,
 				64A0531624F725600069FBFD /* AppDelegate.swift */,
 				64A0531824F725600069FBFD /* SceneDelegate.swift */,
 				64A0531A24F725600069FBFD /* ContentView.swift */,
-				64A0532A24F725C60069FBFD /* Views */,
-				64A0532D24F72CA00069FBFD /* Models */,
 				64A0531C24F725640069FBFD /* Assets.xcassets */,
 				64A0532124F725640069FBFD /* LaunchScreen.storyboard */,
 				64A0532424F725640069FBFD /* Info.plist */,
@@ -112,6 +112,7 @@
 			children = (
 				64A0533024F732640069FBFD /* TabBarItem.swift */,
 				64A0532B24F72C950069FBFD /* Guide.swift */,
+				643A6B4C253F9C7E00BCC396 /* Place.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -122,7 +123,6 @@
 				64A6F69924F8025A0051A1A5 /* HomeView.swift */,
 				64A0533824F742170069FBFD /* HomeContentView.swift */,
 				64A0532E24F731AD0069FBFD /* GuideView.swift */,
-				64A0533424F73AB30069FBFD /* Cell.swift */,
 				64A6F69D24F8039E0051A1A5 /* GridView.swift */,
 				64A6F69C24F8039E0051A1A5 /* TabBarView.swift */,
 			);
@@ -210,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				64A0533124F732640069FBFD /* TabBarItem.swift in Sources */,
+				643A6B4D253F9C7E00BCC396 /* Place.swift in Sources */,
 				64A0532C24F72C950069FBFD /* Guide.swift in Sources */,
 				64A6F69F24F8039F0051A1A5 /* GridView.swift in Sources */,
 				64A0533924F742170069FBFD /* HomeContentView.swift in Sources */,
@@ -217,7 +218,6 @@
 				64A6F6A124F805580051A1A5 /* DetailsView.swift in Sources */,
 				64A6F69A24F8025A0051A1A5 /* HomeView.swift in Sources */,
 				64A0531924F725600069FBFD /* SceneDelegate.swift in Sources */,
-				64A0533524F73AB30069FBFD /* Cell.swift in Sources */,
 				64A0531B24F725600069FBFD /* ContentView.swift in Sources */,
 				64A6F69E24F8039F0051A1A5 /* TabBarView.swift in Sources */,
 				64A0532F24F731AD0069FBFD /* GuideView.swift in Sources */,
@@ -360,7 +360,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"CleanTravelAppDesignConcept/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = CleanTravelAppDesignConcept/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -380,7 +380,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"CleanTravelAppDesignConcept/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = CleanTravelAppDesignConcept/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

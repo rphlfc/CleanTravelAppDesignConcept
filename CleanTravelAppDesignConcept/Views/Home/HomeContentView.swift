@@ -10,7 +10,8 @@ import SwiftUI
 
 struct HomeContentView: View {
     @Binding var showDetails: Bool
-    @Binding var item: GridItem?
+    @Binding var selectedItem: Place?
+    var animation: Namespace.ID
     
     var body: some View {
         VStack {
@@ -62,7 +63,7 @@ struct HomeContentView: View {
                     
                     GuideView()
                     
-                    GridView(showDetails: self.$showDetails, item: self.$item)
+                    GridView(showDetails: $showDetails, selectedItem: $selectedItem, animation: animation)
                         .padding(.top, 8)
                     
                     Spacer()
@@ -73,8 +74,8 @@ struct HomeContentView: View {
     }
 }
 
-struct HomeContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        HomeContentView(showDetails: .constant(false), item: .constant(nil))
-    }
-}
+//struct HomeContentView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        HomeContentView(showDetails: .constant(false), selectedItem: .constant(places[0]))
+//    }
+//}
